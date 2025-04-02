@@ -1,0 +1,14 @@
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\bin\Debug\net8.0\TheFinalTask.exe
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\bin\Debug\net8.0\TheFinalTask.deps.json
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\bin\Debug\net8.0\TheFinalTask.runtimeconfig.json
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\bin\Debug\net8.0\TheFinalTask.dll
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\bin\Debug\net8.0\TheFinalTask.pdb
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\TheFinalTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\TheFinalTask.AssemblyInfoInputs.cache
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\TheFinalTask.AssemblyInfo.cs
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\TheFinalTask.csproj.CoreCompileInputs.cache
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\TheFinalTask.dll
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\refint\TheFinalTask.dll
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\TheFinalTask.pdb
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\TheFinalTask.genruntimeconfig.cache
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\ref\TheFinalTask.dll
