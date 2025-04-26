@@ -2,37 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-
-
-
-
-// Карта для блэк-джека
-public class Card
-{
-    public string Suit { get; }
-    public string Rank { get; }
-    public int Value { get; }
-
-    public Card(string suit, string rank, int value)
-    {
-        Suit = suit;
-        Rank = rank;
-        Value = value;
-    }
-
-    public override string ToString()
-    {
-        return $"{Rank} {Suit}";
-    }
-}
-
-
-
-
-
-
-
-// Основная программа
 class Program
 {
     static void Main(string[] args)
@@ -72,5 +41,3 @@ class Program
         casino.ShowMenu();
     }
 }
-
-

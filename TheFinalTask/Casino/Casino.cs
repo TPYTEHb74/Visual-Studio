@@ -71,7 +71,7 @@
         }
 
 
-        var game = new BlackjackGame(_player, bet, 36);
+        var game = new PlayBlackjack(_player, bet, 36);
         game.OnWin += () => Console.WriteLine($"Поздравляем! Вы выиграли {bet * 2}!");
         game.OnLose += () => Console.WriteLine("Увы, вы проиграли.");
         game.OnDraw += () => Console.WriteLine("Ничья! Ваша ставка возвращена.");
@@ -101,7 +101,7 @@
             return;
         }
 
-        var game = new DiceGame(_player, bet, diceCount, 1, 6);
+        var game = new PlayDiceGame(_player, bet, diceCount, 1, 6);
         game.OnWin += () => Console.WriteLine($"Поздравляем! Вы выиграли {bet * 2}!");
         game.OnLose += () => Console.WriteLine("Увы, вы проиграли.");
         game.OnDraw += () => Console.WriteLine("Ничья! Ваша ставка возвращена.");
@@ -114,39 +114,4 @@
         _saveLoadService.Save(_player.ToString(), _player.Name);
         Console.WriteLine("Профиль сохранен!");
     }
-}
-public abstract class CasinoGame
-{
-    protected readonly PlayerProfile _player;
-    protected readonly int _betAmount;
-
-    public event Action OnWin;
-    public event Action OnLose;
-    public event Action OnDraw;
-
-    protected CasinoGame(PlayerProfile player, int betAmount)
-    {
-        _player = player;
-        _betAmount = betAmount;
-    }
-
-    protected void Win(int multiplier = 2)
-    {
-        _player.RecordWin(_betAmount * multiplier);
-        OnWin?.Invoke();
-    }
-
-    protected void Lose()
-    {
-        _player.RecordLoss();
-        OnLose?.Invoke();
-    }
-
-    protected void Draw()
-    {
-        _player.RecordDraw();
-        OnDraw?.Invoke();
-    }
-
-    public abstract void Play();
 }

@@ -12,3 +12,4 @@ C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\
 C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\TheFinalTask.pdb
 C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\TheFinalTask.genruntimeconfig.cache
 C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\ref\TheFinalTask.dll
+C:\Users\sasha\OneDrive\Документы\Visual Studio\TheFinalTask\obj\Debug\net8.0\TheFinalTask.sourcelink.json

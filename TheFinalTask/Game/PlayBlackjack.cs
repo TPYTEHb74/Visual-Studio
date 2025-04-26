@@ -1,49 +1,26 @@
-﻿public class BlackjackGame : CasinoGame
+﻿public class PlayBlackjack : CasinoGame
 {
-    private readonly int _numberOfCards;
+    
     private Queue<Card> _deck;
     private List<Card> _playerCards;
     private List<Card> _dealerCards;
 
-    public BlackjackGame(PlayerProfile player, int betAmount, int numberOfCards)
-        : base(player, betAmount)
-    {
-        _numberOfCards = numberOfCards;
-    }
-
     private List<Card> CreateCards()
     {
-        var cards = new List<Card>();
-        string[] suits = { "♥", "♦", "♣", "♠" };
-        string[] ranks = { "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
-        int[] values = { 6, 7, 8, 9, 10, 10, 10, 10, 11 };
-       
-        for (int i = 0; i < _numberOfCards / 36 + 1; i++)
-        {
-            for (int s = 0; s < suits.Length; s++)
-            {
-                for (int r = 0; r < ranks.Length; r++)
-                {
-                    cards.Add(new Card(suits[s], ranks[r], values[r]));
-                }
-            }
-        }
-
-        return cards.Take(_numberOfCards).ToList();
+        throw new NotImplementedException();
     }
-
     private void Shuffle(List<Card> cards)
     {
-        var random = new Random();
-        _deck = new Queue<Card>();
-
-        while (cards.Count > 0)
-        {
-            int index = random.Next(cards.Count);
-            _deck.Enqueue(cards[index]);
-            cards.RemoveAt(index);
-        }
+        throw new NotImplementedException();
     }
+
+    public PlayBlackjack(PlayerProfile player, int betAmount, int numberOfCards)
+        : base(player, betAmount)
+    {
+        
+    }
+    
+
 
     private int CalculateScore(List<Card> hand)
     {
@@ -89,7 +66,7 @@
         else if (playerScore == 21)
         {
             Console.WriteLine("Блэкджек! Вы выиграли!");
-            Win(3); 
+            Win(3);
             return;
         }
         else if (dealerScore == 21)

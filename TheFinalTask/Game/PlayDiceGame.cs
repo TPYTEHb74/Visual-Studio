@@ -1,18 +1,18 @@
-﻿public class DiceGame : CasinoGame
+﻿public class PlayDiceGame : CasinoGame
 {
     private readonly int _numberOfDice;
     private readonly int _minValue;
     private readonly int _maxValue;
     private List<int> _dice;
 
-    public DiceGame(PlayerProfile player, int betAmount, int numberOfDice, int minValue, int maxValue)
+    public PlayDiceGame(PlayerProfile player, int betAmount, int numberOfDice, int minValue, int maxValue)
         : base(player, betAmount)
     {
         _numberOfDice = numberOfDice;
         _minValue = minValue;
         _maxValue = maxValue;
     }
-   
+
     private List<int> CreateDice()
     {
         var random = new Random();
@@ -29,7 +29,7 @@
     public override void Play()
     {
         Console.WriteLine("Бросаем кости...");
-        
+
         _dice = CreateDice();
         int playerSum = _dice.Sum();
 
@@ -57,7 +57,7 @@
         else
         {
             Console.WriteLine("Ничья!");
-            Draw();
+            Draw();           
         }
     }
 }

@@ -5,15 +5,14 @@
     public int GamesPlayed { get; private set; }
     public int Wins { get; private set; }
     public int Losses { get; private set; }
-    private const int MaxBalance = 2000;   
-    private const int MinBalance = 0;
+    private const int MaxBalance = 2000;
 
     public event Action<int> OnBalanceChanged;
     public event Action OnWin;
     public event Action OnLose;
     public event Action OnDraw;
     public event Action<string> OnCasinoBankrupt;
-    
+
     public PlayerProfile(string name, int initialBalance)
     {
         Name = name;
@@ -58,29 +57,10 @@
         return false;
     }
 
-    public void RecordWin(int winAmount)
-    {
-        Wins++;
-        GamesPlayed++;
-        AddBalance(winAmount);
-        OnWin?.Invoke();
-    }
-
-    public void RecordLoss()
-    {
-        Losses++;
-        GamesPlayed++;
-        OnLose?.Invoke();
-    }
-
-    public void RecordDraw()
-    {
-        GamesPlayed++;
-        OnDraw?.Invoke();
-    }
+ 
 
     public override string ToString()
     {
-        return $"Игрок: {Name}\nБаланс: {Balance}\nИгр сыграно: {GamesPlayed}\nПобед: {Wins}\nПоражений: {Losses}";
+        return $"Игрок: {Name}\nБаланс: {Balance}";
     }
 }
